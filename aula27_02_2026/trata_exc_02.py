@@ -6,7 +6,7 @@ def raiz_quadrada(a):
     if a > 0:
         raiz = sqrt(a)
         return raiz
-    else: return "Valor precisa ser positivo"
+    else:raise ValueError("Valor precisa ser positivo")
     
 def calcular_media(li):
     cont = 0

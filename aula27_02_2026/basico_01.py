@@ -14,7 +14,7 @@ def dividir(a,b):
     divi = a/b
     
     if b == 0:
-        return "Divisor deve ser diferente de zero"
+        raise ValueError("Divisor deve ser diferente de zero")
     else:
         return divi
     

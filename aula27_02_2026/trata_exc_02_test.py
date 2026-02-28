@@ -1,4 +1,3 @@
-
 # rodar -> pytest
 # rodar -> python -m pytest .\aula27_02_2026\trata_exc_02_test.py -v
 # intalar -> python -m pip install coverage
@@ -21,7 +20,8 @@ def test_raiz():
     
 def test_raiz_negativo():
     valor = somar(-15,0)
-    assert raiz_quadrada(valor) == "Valor precisa ser positivo"
+    with pytest.raises(ValueError):
+        raiz_quadrada(valor)
 
 def test_par():
     assert comparar(15,9) is True
