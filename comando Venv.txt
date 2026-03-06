@@ -1,0 +1,5 @@
+venv\Scripts\activate
+
+coverage run -m pytest -v (estar dentro da pasta)
+
+coverage html
