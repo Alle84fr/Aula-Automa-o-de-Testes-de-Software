@@ -1,5 +1,7 @@
 venv\Scripts\activate
 
+pytest ex2_tdd_test.py
+
 coverage run -m pytest -v (estar dentro da pasta)
 
 coverage html
