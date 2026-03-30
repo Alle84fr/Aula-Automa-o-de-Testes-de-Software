@@ -21,3 +21,4 @@ def test_executar_processo_com_mock(mocker):
 
     assert resultado == "Processo concluído com sucesso"
 
+# https://github.com/Alle84fr/Aula-Automa-o-de-Testes-de-Software.git

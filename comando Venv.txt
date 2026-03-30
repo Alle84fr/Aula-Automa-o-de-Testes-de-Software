@@ -5,3 +5,7 @@ pytest ex2_tdd_test.py
 coverage run -m pytest -v (estar dentro da pasta)
 
 coverage html
+
+python -m venv .venv: cria o ambiente virtual isolado do projeto.
+.venv\Scripts\Activate.ps1: ativa o ambiente no PowerShell do VS Code.
+python -m pip install pytest selenium: instala o Pytest para testes e o Selenium para automação do navegador.
