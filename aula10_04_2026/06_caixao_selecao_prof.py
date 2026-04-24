@@ -7,11 +7,15 @@ driver = webdriver.Chrome()
 print("1. Acessando a página de Dropdown...")
 driver.get("https://the-internet.herokuapp.com/dropdown")
 
+# dropdown = menu supenso
+# driver...element() buscar elementos que neste caso é por id
 elemento_dropdown = driver.find_element(By.ID, "dropdown")
 
+# Select() classe ond estpa dropdown
 menu = Select(elemento_dropdown)
 
 print("2. Selecionando a 'Option 2' pelo texto visível...")
+# selecionar pelo texto
 menu.select_by_visible_text("Option 2")
 
 print("Sucesso! O robô escolheu a opção sem precisar 'clicar' para abrir o menu.")
